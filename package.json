@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "next": "^2.1.1",
+    "raf-throttle": "^2.0.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   }

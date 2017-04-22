@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Logo from '../components/logo'
 
 export default () => (
   <div>
@@ -13,13 +14,14 @@ export default () => (
     </Head>
     <style jsx>{`
       main {
+        color: #111;
         font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
         margin: 0.5rem;
       }
 
       @media (min-width: 30rem) {
         main {
-          margin: 2.5rem;
+          margin: 2.5rem auto;
           max-width: 30rem;
         }
       }
@@ -28,21 +30,39 @@ export default () => (
         font-size: 1.5rem;
       }
 
-      h1, li {
-        margin: 1rem 0;
-      }
-
       p {
-        margin: 5rem 0 5rem;
+        margin: 3rem 0 3rem;
       }
 
       ul {
         list-style-type: none;
         padding: 0;
       }
+
+      li {
+        margin: 1rem 0;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2rem 0;
+      }
+
+      .logo-wrapper {
+        height: 5rem;
+        perspective-origin: 50% 50%;
+        perspective: 512px;
+        width: 10rem;
+        margin: 0.25rem 0 0 1rem;
+      }
     `}</style>
     <main>
-      <h1>theodor vararu.</h1>
+      <div className='title'>
+        <h1>theodor<br />vararu.</h1>
+        <div className='logo-wrapper'><Logo /></div>
+      </div>
       <p>Theo is a JavaScript developer interested in accessibility, Node.js, and React.js.</p>
       <ul>
         <li>Email: <a href='mailto:theo@vararu.org'>theo@vararu.org</a></li>
