@@ -10,7 +10,7 @@ export default () => (
       <meta property='og:title' content='vararu.org' />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://vararu.org' />
-      <title>👓 vararu.org</title>
+      <title>Theodor Vararu 👓</title>
     </Head>
     <style jsx>{`
       main {
