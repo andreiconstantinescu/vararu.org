@@ -1,11 +1,11 @@
 {
   "name": "vararu.org",
   "version": "1.0.0",
-  "main": "index.js",
+  "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "next",
     "build": "next build",
+    "dev": "next",
     "start": "next start"
   },
   "dependencies": {
