@@ -2,7 +2,7 @@ import {Component} from 'react'
 import Head from 'next/head'
 import Logo from '../components/logo'
 
-const hasRAF = ctx => ctx.requestAnimationFrame
+const hasRAF = ctx => !!ctx.requestAnimationFrame
 
 export default class Index extends Component {
   constructor (props) {
