@@ -7,6 +7,8 @@
     "build": "next build",
     "dev": "next",
     "format": "prettier-standard 'pages/**/*.js' 'components/**/*.js'",
+    "lint-staged": "lint-staged",
+    "precommit": "npm run lint-staged",
     "start": "next start"
   },
   "dependencies": {
@@ -16,6 +18,20 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
     "prettier-standard": "^4.1.0"
+  },
+  "lint-staged": {
+    "linters": {
+      "pages/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ],
+      "components/**/*.js": [
+        "prettier-standard",
+        "git add"
+      ]
+    }
   }
 }
