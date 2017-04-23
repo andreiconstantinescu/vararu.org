@@ -9,7 +9,7 @@
     "format": "prettier-standard 'pages/**/*.js' 'components/**/*.js'",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
-    "start": "next start"
+    "start": "next start --port=$PORT"
   },
   "dependencies": {
     "next": "^2.1.1",
