@@ -1,4 +1,4 @@
-import { Component } from 'react'
+import {Component} from 'react'
 import throttle from 'raf-throttle'
 
 const SvgLogo = () => (
@@ -48,54 +48,60 @@ export default class Logo extends Component {
     const dy = limitTo01Range(event.pageY - cy - rect.top, 64) * 64
 
     const tiltx = -(dy / cy)
-    const tilty = (dx / cx)
+    const tilty = dx / cx
     const radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2))
-    const degree = (radius * 20)
+    const degree = radius * 20
 
-    this.setState({ tiltx, tilty, degree })
+    this.setState({tiltx, tilty, degree})
   }
 
   lookAtCenter () {
-    this.setState({ tiltx: 0, tilty: 0, degree: 0 })
+    this.setState({tiltx: 0, tilty: 0, degree: 0})
   }
 
   render () {
-    const { tiltx, tilty, degree } = this.state
+    const {tiltx, tilty, degree} = this.state
 
-    return <div
-      className='wrapper'
-      ref={(wrapper) => { this.$wrapper = wrapper }}
-      style={{
-        transition: (!tiltx && !tilty && !degree) ? 'transform 0.2s ease' : 'none',
-        transform: `rotate3d(${tiltx}, ${tilty}, 0, ${degree}deg)`
-      }}
-    >
-      <style jsx>{`
-        .wrapper {
-          height: 100%;
-          transform-style: preserve-3d;
-          width: 100%;
-        }
+    return (
+      <div
+        className='wrapper'
+        ref={wrapper => {
+          this.$wrapper = wrapper
+        }}
+        style={{
+          transition: !tiltx && !tilty && !degree
+            ? 'transform 0.2s ease'
+            : 'none',
+          transform: `rotate3d(${tiltx}, ${tilty}, 0, ${degree}deg)`
+        }}
+      >
+        <style jsx>{`
+          .wrapper {
+            height: 100%;
+            transform-style: preserve-3d;
+            width: 100%;
+          }
 
-        .foreground, .background {
-          height: 100%;
-          position: absolute;
-          width: 100%;
-        }
+          .foreground, .background {
+            height: 100%;
+            position: absolute;
+            width: 100%;
+          }
 
-        .foreground {
-          transform: scale(0.999);
-          opacity: 1;
-        }
+          .foreground {
+            transform: scale(0.999);
+            opacity: 1;
+          }
 
-        .background {
-          color: #fff;
-          transform: translateZ(10px);
-          opacity: 1;
-        }
-      `}</style>
-      <div className='foreground'><SvgLogo /></div>
-      <div className='background'><SvgLogo /></div>
-    </div>
+          .background {
+            color: #fff;
+            transform: translateZ(10px);
+            opacity: 1;
+          }
+        `}</style>
+        <div className='foreground'><SvgLogo /></div>
+        <div className='background'><SvgLogo /></div>
+      </div>
+    )
   }
 }
