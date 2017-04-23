@@ -25,38 +25,55 @@ export default class Logo extends Component {
       degree: 0
     }
 
-    this.lookAtMouse = throttle(this.lookAtMouse.bind(this))
-    this.lookAtCenter = this.lookAtCenter.bind(this)
+    this.handleMouseMove = throttle(this.handleMouseMove.bind(this))
+    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+    this.handleDeviceOrientation = throttle(
+      this.handleDeviceOrientation.bind(this)
+    )
+    this.tilt = this.tilt.bind(this)
   }
 
   componentDidMount () {
-    document.addEventListener('mousemove', this.lookAtMouse)
-    document.addEventListener('mouseleave', this.lookAtCenter)
+    window.addEventListener('mousemove', this.handleMouseMove)
+    window.addEventListener('mouseleave', this.handleMouseLeave)
+    window.addEventListener('deviceorientation', this.handleDeviceOrientation)
   }
 
   componentWillUnmount () {
-    document.removeEventListener('mousemove', this.lookAtMouse)
-    document.removeEventListener('mouseleave', this.lookAtCenter)
+    window.removeEventListener('mousemove', this.handleMouseMove)
+    window.removeEventListener('mouseleave', this.handleMouseLeave)
+    window.removeEventListener(
+      'deviceorientation',
+      this.handleDeviceOrientation
+    )
   }
 
-  lookAtMouse (event) {
+  handleMouseMove (event) {
     const rect = this.$wrapper.getBoundingClientRect()
     const cx = Math.ceil(rect.width / 2.0)
     const cy = Math.ceil(rect.height / 2.0)
-
     const dx = limitTo01Range(event.pageX - cx - rect.left, 128) * 128
     const dy = limitTo01Range(event.pageY - cy - rect.top, 64) * 64
 
     const tiltx = -(dy / cy)
     const tilty = dx / cx
-    const radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2))
-    const degree = radius * 20
-
-    this.setState({tiltx, tilty, degree})
+    this.tilt(tiltx, tilty)
   }
 
-  lookAtCenter () {
-    this.setState({tiltx: 0, tilty: 0, degree: 0})
+  handleMouseLeave () {
+    this.tilt(0, 0)
+  }
+
+  handleDeviceOrientation (event) {
+    const tiltx = limitTo01Range(event.beta, 10) * -1
+    const tilty = limitTo01Range(event.gamma, 10)
+    this.tilt(tiltx, tilty)
+  }
+
+  tilt (tiltx, tilty) {
+    const radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2))
+    const degree = radius * 20
+    this.setState({tiltx, tilty, degree})
   }
 
   render () {
