@@ -6,6 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
+    "format": "prettier-standard 'pages/**/*.js' 'components/**/*.js'",
     "start": "next start"
   },
   "dependencies": {
@@ -13,5 +14,8 @@
     "raf-throttle": "^2.0.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "prettier-standard": "^4.1.0"
   }
 }
