@@ -33,26 +33,24 @@ export default class Index extends Component {
           <meta property='og:url' content='https://vararu.org' />
           <title>theodor vararu. 👓</title>
         </Head>
-        <style jsx>{`
-          main {
+        <style jsx global>{`
+          body {
             color: #111;
             font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-            margin: 0.5rem;
+            margin: 0;
           }
-
-          @media (min-width: 30rem) {
-            main {
-              margin: 2.5rem auto;
-              max-width: 30rem;
-            }
+        `}</style>
+        <style jsx>{`
+          main {
+            margin: 1rem;
           }
 
           h1, p, ul {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
           }
 
           p {
-            margin: 3rem 0 3rem;
+            margin: 3rem 0;
           }
 
           ul {
@@ -65,18 +63,34 @@ export default class Index extends Component {
           }
 
           .title {
-            display: flex;
             align-items: center;
+            display: flex;
             justify-content: space-between;
             margin: 2rem 0;
           }
 
           .logo-wrapper {
-            height: 5rem;
+            height: 4rem;
+            margin: 0.25rem 0 0 1rem;
             perspective-origin: 50% 50%;
             perspective: 512px;
-            width: 10rem;
-            margin: 0.25rem 0 0 1rem;
+            width: 8rem;
+          }
+
+          @media (min-width: 30rem) {
+            main {
+              margin: 3rem auto;
+              max-width: 30rem;
+            }
+
+            h1, p, ul {
+              font-size: 1.5rem;
+            }
+
+            .logo-wrapper {
+              height: 5rem;
+              width: 10rem;
+            }
           }
         `}</style>
         <main>
