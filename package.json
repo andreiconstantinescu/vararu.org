@@ -25,12 +25,10 @@
   "lint-staged": {
     "linters": {
       "pages/**/*.js": [
-        "prettier-standard",
-        "git add"
+        "prettier-standard"
       ],
       "components/**/*.js": [
-        "prettier-standard",
-        "git add"
+        "prettier-standard"
       ]
     }
   }
