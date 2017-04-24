@@ -31,7 +31,7 @@ export default class Index extends Component {
           <meta property='og:title' content='vararu.org' />
           <meta property='og:type' content='website' />
           <meta property='og:url' content='https://vararu.org' />
-          <title>Theodor Vararu 👓</title>
+          <title>theodor vararu. 👓</title>
         </Head>
         <style jsx>{`
           main {
