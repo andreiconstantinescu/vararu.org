@@ -101,7 +101,7 @@ export default class Index extends Component {
             <li>
               Résumé:
               {' '}
-              <a href='https://vararu.org/cv/'>vararu.org/cv/</a>
+              <a href='https://tvararu.github.io/cv/'>tvararu.github.io/cv/</a>
             </li>
             <li>
               GitHub:
