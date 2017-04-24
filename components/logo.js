@@ -34,14 +34,14 @@ export default class Logo extends Component {
   }
 
   componentDidMount () {
-    window.addEventListener('mousemove', this.handleMouseMove)
-    window.addEventListener('mouseleave', this.handleMouseLeave)
+    document.addEventListener('mousemove', this.handleMouseMove)
+    document.addEventListener('mouseleave', this.handleMouseLeave)
     window.addEventListener('deviceorientation', this.handleDeviceOrientation)
   }
 
   componentWillUnmount () {
-    window.removeEventListener('mousemove', this.handleMouseMove)
-    window.removeEventListener('mouseleave', this.handleMouseLeave)
+    document.removeEventListener('mousemove', this.handleMouseMove)
+    document.removeEventListener('mouseleave', this.handleMouseLeave)
     window.removeEventListener(
       'deviceorientation',
       this.handleDeviceOrientation
