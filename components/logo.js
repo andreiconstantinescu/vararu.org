@@ -1,5 +1,6 @@
 import {Component} from 'react'
 import throttle from 'raf-throttle'
+import {Motion, spring} from 'react-motion'
 
 const SvgLogo = () => (
   <svg width='100%' viewBox='0 0 512 256'>
@@ -78,46 +79,72 @@ export default class Logo extends Component {
 
   render () {
     const {tiltx, tilty, degree} = this.state
+    const springParams = {stiffness: 100, damping: 8}
 
     return (
-      <div
-        className='wrapper'
-        ref={wrapper => {
-          this.$wrapper = wrapper
+      <Motion
+        defaultStyle={{
+          backgroundTransformScale: 1,
+          degree: 0,
+          tiltx: 0,
+          tilty: 0,
+          foregroundTranslateZ: 0
         }}
-        role='presentation'
         style={{
-          transition: !tiltx && !tilty && !degree
-            ? 'transform 0.2s ease'
-            : 'none',
-          transform: `rotate3d(${tiltx}, ${tilty}, 0, ${degree}deg)`
+          backgroundTransformScale: spring(0.999),
+          degree: spring(degree, springParams),
+          tiltx: spring(tiltx, springParams),
+          tilty: spring(tilty, springParams),
+          foregroundTranslateZ: spring(10)
         }}
       >
-        <style jsx>{`
-          .wrapper {
-            height: 100%;
-            transform-style: preserve-3d;
-            width: 100%;
-          }
+        {style => (
+          <div
+            className='wrapper'
+            ref={wrapper => {
+              this.$wrapper = wrapper
+            }}
+            role='presentation'
+            style={{
+              transform: `rotate3d(${style.tiltx}, ${style.tilty}, 0, ${style.degree}deg)`
+            }}
+          >
+            <style jsx>{`
+              .wrapper {
+                height: 100%;
+                transform-style: preserve-3d;
+                width: 100%;
+              }
 
-          .foreground, .background {
-            height: 100%;
-            position: absolute;
-            width: 100%;
-          }
+              .background, .foreground {
+                height: 100%;
+                position: absolute;
+                width: 100%;
+              }
 
-          .foreground {
-            transform: scale(0.999);
-          }
-
-          .background {
-            color: #fff;
-            transform: translateZ(10px);
-          }
-        `}</style>
-        <div className='foreground'><SvgLogo /></div>
-        <div className='background'><SvgLogo /></div>
-      </div>
+              .foreground {
+                color: #fff;
+              }
+            `}</style>
+            <div
+              className='background'
+              style={{
+                transform: `scale(${style.backgroundTransformScale})`
+              }}
+            >
+              <SvgLogo />
+            </div>
+            <div
+              className='foreground'
+              style={{
+                transform: `translateZ(${style.foregroundTranslateZ}px)`
+              }}
+            >
+              <SvgLogo />
+            </div>
+          </div>
+        )}
+      </Motion>
     )
   }
 }
