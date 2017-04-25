@@ -21,14 +21,12 @@
   "devDependencies": {
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
-    "prettier-standard": "^4.1.0"
+    "prettier-standard": "^4.1.0",
+    "webpack-visualizer-plugin": "^0.1.11"
   },
   "lint-staged": {
     "linters": {
-      "pages/**/*.js": [
-        "prettier-standard"
-      ],
-      "components/**/*.js": [
+      "**/*.js": [
         "prettier-standard"
       ]
     }
