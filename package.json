@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "format": "prettier-standard 'pages/**/*.js' 'components/**/*.js'",
+    "format": "prettier-standard **/*.js",
     "lint-staged": "lint-staged",
     "precommit": "npm run lint-staged",
     "start": "next start --port=$PORT"
