@@ -1,11 +1,20 @@
+// @flow
 import {Component} from 'react'
 import Head from 'next/head'
 import Logo from '../components/logo'
 
-const hasRAF = ctx => !!ctx.requestAnimationFrame
+type Window = {
+  requestAnimationFrame: Function
+}
+
+const hasRAF = (ctx: Window): boolean => !!ctx.requestAnimationFrame
 
 export default class Index extends Component {
-  constructor (props) {
+  state: {
+    renderLogo: boolean
+  }
+
+  constructor (props: any) {
     super(props)
 
     this.state = {
@@ -19,7 +28,7 @@ export default class Index extends Component {
     }
   }
 
-  render () {
+  render (): React$Element<any> {
     const {renderLogo} = this.state
 
     return (
