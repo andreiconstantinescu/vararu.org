@@ -10,6 +10,7 @@
     "flow-coverage": "flow-coverage-report -i 'pages/**/*.js' -i 'components/**/*.js' -t html -o coverage/flow-coverage-report",
     "flow": "flow",
     "lint-staged": "lint-staged",
+    "lint": "run-p eslint 'flow -- check'",
     "precommit": "npm run lint-staged",
     "prettier-eslint": "prettier-eslint --write 'pages/**/*.js' 'components/**/*.js'",
     "start": "next start --port=$PORT"
@@ -37,6 +38,7 @@
     "flow-coverage-report": "^0.3.0",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
+    "npm-run-all": "^4.0.2",
     "prettier-eslint-cli": "^3.4.2",
     "webpack-visualizer-plugin": "^0.1.11"
   },
