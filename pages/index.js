@@ -1,6 +1,5 @@
 // @flow
 import {Component} from 'react'
-import Head from 'next/head'
 import Logo from '../components/logo'
 
 const hasRAF = (ctx): boolean => !!ctx.requestAnimationFrame
@@ -29,22 +28,6 @@ export default class Index extends Component {
 
     return (
       <div>
-        <Head>
-          <meta charSet="utf-8" />
-          <meta name="viewport" content="width=device-width, minimum-scale=1" />
-          <meta name="description" content="Theodor Vararu's website." />
-          <meta property="og:title" content="vararu.org" />
-          <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://vararu.org" />
-          <title>theodor vararu. 👓</title>
-        </Head>
-        <style jsx global>{`
-          body {
-            color: #111;
-            font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
-            margin: 0;
-          }
-        `}</style>
         <style jsx>{`
           main {
             margin: 1rem;

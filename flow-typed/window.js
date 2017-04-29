@@ -3,6 +3,7 @@ declare type Window = {
   removeEventListener: (type: string, listener: (evt: any) => void) => void,
   requestAnimationFrame: Function
 }
+
 declare var window: Window
 
 declare type DeviceOrientationEvent = {
