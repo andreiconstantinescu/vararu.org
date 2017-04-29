@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "standard",
+    "plugin:flowtype/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "react"
+  ],
+  "rules": {
+    "react/jsx-uses-vars": [2]
+  }
+}

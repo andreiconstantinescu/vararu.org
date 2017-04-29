@@ -3,18 +3,14 @@ import {Component} from 'react'
 import Head from 'next/head'
 import Logo from '../components/logo'
 
-type Window = {
-  requestAnimationFrame: Function
-}
-
-const hasRAF = (ctx: Window): boolean => !!ctx.requestAnimationFrame
+const hasRAF = (ctx): boolean => !!ctx.requestAnimationFrame
 
 export default class Index extends Component {
   state: {
     renderLogo: boolean
   }
 
-  constructor (props: any) {
+  constructor (props: Object) {
     super(props)
 
     this.state = {
@@ -28,18 +24,18 @@ export default class Index extends Component {
     }
   }
 
-  render (): React$Element<any> {
+  render () {
     const {renderLogo} = this.state
 
     return (
       <div>
         <Head>
-          <meta charSet='utf-8' />
-          <meta name='viewport' content='width=device-width, minimum-scale=1' />
-          <meta name='description' content="Theodor Vararu's website." />
-          <meta property='og:title' content='vararu.org' />
-          <meta property='og:type' content='website' />
-          <meta property='og:url' content='https://vararu.org' />
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, minimum-scale=1" />
+          <meta name="description" content="Theodor Vararu's website." />
+          <meta property="og:title" content="vararu.org" />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://vararu.org" />
           <title>theodor vararu. 👓</title>
         </Head>
         <style jsx global>{`
@@ -103,9 +99,9 @@ export default class Index extends Component {
           }
         `}</style>
         <main>
-          <div className='title'>
+          <div className="title">
             <h1>theodor<br />vararu.</h1>
-            {renderLogo && <div className='logo-wrapper'><Logo /></div>}
+            {renderLogo && <div className="logo-wrapper"><Logo /></div>}
           </div>
           <p>
             Theo is a JavaScript developer interested in accessibility, Node.js, and React.js.
@@ -114,27 +110,27 @@ export default class Index extends Component {
             <li>
               Email:
               {' '}
-              <a href='mailto:theo@vararu.org'>theo@vararu.org</a>
+              <a href="mailto:theo@vararu.org">theo@vararu.org</a>
             </li>
             <li>
               Blog:
               {' '}
-              <a href='https://blog.vararu.org'>blog.vararu.org</a>
+              <a href="https://blog.vararu.org">blog.vararu.org</a>
             </li>
             <li>
               Résumé:
               {' '}
-              <a href='https://vararu.org/cv/'>vararu.org/cv/</a>
+              <a href="https://vararu.org/cv/">vararu.org/cv/</a>
             </li>
             <li>
               GitHub:
               {' '}
-              <a href='https://github.com/tvararu'>github.com/tvararu</a>
+              <a href="https://github.com/tvararu">github.com/tvararu</a>
             </li>
             <li>
               Twitter:
               {' '}
-              <a href='https://twitter.com/tvararu'>twitter.com/tvararu</a>
+              <a href="https://twitter.com/tvararu">twitter.com/tvararu</a>
             </li>
           </ul>
         </main>
