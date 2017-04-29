@@ -1,5 +1,6 @@
 // @flow
 import {Component} from 'react'
+import Link from 'next/link'
 import Logo from './logo'
 
 const hasRAF = (ctx): boolean => !!ctx.requestAnimationFrame
@@ -66,7 +67,7 @@ export default class Header extends Component {
             }
           }
         `}</style>
-        <p>theodor<br /><a href="/">vararu.org</a></p>
+        <p>theodor<br /><Link href="/" prefetch><a>vararu.org</a></Link></p>
         {renderLogo && <div className="logo"><Logo /></div>}
       </header>
     )
