@@ -29,9 +29,7 @@ export default class Logo extends Component {
 
     this.handleMouseMove = throttle(this.handleMouseMove.bind(this))
     this.handleMouseLeave = this.handleMouseLeave.bind(this)
-    this.handleDeviceOrientation = throttle(
-      this.handleDeviceOrientation.bind(this)
-    )
+    this.handleDeviceOrientation = throttle(this.handleDeviceOrientation.bind(this))
     this.tilt = this.tilt.bind(this)
   }
 
@@ -44,10 +42,7 @@ export default class Logo extends Component {
   componentWillUnmount () {
     document.removeEventListener('mousemove', this.handleMouseMove)
     document.removeEventListener('mouseleave', this.handleMouseLeave)
-    window.removeEventListener(
-      'deviceorientation',
-      this.handleDeviceOrientation
-    )
+    window.removeEventListener('deviceorientation', this.handleDeviceOrientation)
   }
 
   handleMouseMove (event: MouseEvent) {
