@@ -9,6 +9,7 @@
     "react"
   ],
   "rules": {
-    "react/jsx-uses-vars": [2]
+    "react/jsx-uses-vars": [2],
+    "max-len": [1, 120]
   }
 }
