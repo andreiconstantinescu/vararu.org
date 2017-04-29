@@ -17,7 +17,6 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
-          <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, minimum-scale=1" />
           <meta name="description" content="Theodor Vararu's website." />
           <meta property="og:title" content="vararu.org" />
