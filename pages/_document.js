@@ -25,7 +25,7 @@ export default class MyDocument extends Document {
           <title>theodor vararu. 👓</title>
           <style
             jsx
-            global
+            global // eslint-disable-next-line max-len
           >{`body {color: #111;font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;margin: 0;}`}</style>
         </Head>
         <body>
