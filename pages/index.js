@@ -1,13 +1,18 @@
 // @flow
-import Header from '../components/header'
+import Link from 'next/link'
+import Layout from '../components/layout'
 
 export default () => (
-  <div className="container">
+  <Layout>
+    <h1>Theo is a JavaScript developer interested in accessibility, Node.js, and React.js.</h1>
+    <ul>
+      <li>Email: <a href="mailto:theo@vararu.org">theo@vararu.org</a></li>
+      <li>Blog: <a href="https://blog.vararu.org">blog.vararu.org</a></li>
+      <li>Résumé: <Link href="https://tvararu.github.io/cv/"><a>vararu.org/cv/</a></Link></li>
+      <li>GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a></li>
+      <li>Twitter: <a href="https://twitter.com/tvararu">twitter.com/tvararu</a></li>
+    </ul>
     <style jsx>{`
-      .container {
-        margin: 1rem;
-      }
-
       h1, ul {
         font-size: 1.25rem;
       }
@@ -30,23 +35,7 @@ export default () => (
         h1, ul {
           font-size: 1.5rem;
         }
-
-        .container {
-          margin: 3rem auto;
-          max-width: 30rem;
-        }
       }
     `}</style>
-    <Header />
-    <main>
-      <h1>Theo is a JavaScript developer interested in accessibility, Node.js, and React.js.</h1>
-      <ul>
-        <li>Email: <a href="mailto:theo@vararu.org">theo@vararu.org</a></li>
-        <li>Blog: <a href="https://blog.vararu.org">blog.vararu.org</a></li>
-        <li>Résumé: <a href="https://vararu.org/cv/">vararu.org/cv/</a></li>
-        <li>GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a></li>
-        <li>Twitter: <a href="https://twitter.com/tvararu">twitter.com/tvararu</a></li>
-      </ul>
-    </main>
-  </div>
+  </Layout>
 )
