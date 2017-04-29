@@ -1,5 +1,7 @@
 # vararu.org
 
+[![Build Status](https://travis-ci.org/tvararu/vararu.org.svg?branch=master)](https://travis-ci.org/tvararu/vararu.org)
+
 Run in development mode:
 
 ```bash
