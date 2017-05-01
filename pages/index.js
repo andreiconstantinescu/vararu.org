@@ -1,4 +1,5 @@
 // @flow
+import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/layout'
 
@@ -6,11 +7,11 @@ export default () => (
   <Layout>
     <h1>Theo is a JavaScript developer interested in accessibility, Node.js, and React.js.</h1>
     <ul>
-      <li>Email: <a href="mailto:theo@vararu.org">theo@vararu.org</a></li>
-      <li>Blog: <a href="https://blog.vararu.org">blog.vararu.org</a></li>
-      <li>Résumé: <Link href="https://tvararu.github.io/cv/"><a>vararu.org/cv/</a></Link></li>
-      <li>GitHub: <a href="https://github.com/tvararu">github.com/tvararu</a></li>
-      <li>Twitter: <a href="https://twitter.com/tvararu">twitter.com/tvararu</a></li>
+      <li>Email: <a href='mailto:theo@vararu.org'>theo@vararu.org</a></li>
+      <li>Blog: <a href='https://blog.vararu.org'>blog.vararu.org</a></li>
+      <li>Résumé: <Link href='https://tvararu.github.io/cv/'><a>vararu.org/cv/</a></Link></li>
+      <li>GitHub: <a href='https://github.com/tvararu'>github.com/tvararu</a></li>
+      <li>Twitter: <a href='https://twitter.com/tvararu'>twitter.com/tvararu</a></li>
     </ul>
     <style jsx>{`
       h1, ul {

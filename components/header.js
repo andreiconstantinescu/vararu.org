@@ -1,13 +1,14 @@
 // @flow
+import React from 'react'
 import Link from 'next/link'
 import Logo from './logo'
 import NoSSR from 'react-no-ssr'
 
 export default () => (
   <header>
-    <p>theodor<br /><Link href="/" prefetch><a>vararu.org</a></Link></p>
+    <p>theodor<br /><Link href='/' prefetch><a>vararu.org</a></Link></p>
     <NoSSR>
-      <div className="logo"><Logo /></div>
+      <div className='logo'><Logo /></div>
     </NoSSR>
     <style jsx>{`
       header, .logo {

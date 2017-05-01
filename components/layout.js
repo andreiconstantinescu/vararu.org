@@ -1,4 +1,5 @@
 // @flow
+import React from 'react'
 import Header from './header'
 
 type props = {
@@ -6,7 +7,7 @@ type props = {
 }
 
 export default ({children}: props) => (
-  <div className="container">
+  <div className='container'>
     <Header />
     <main>
       {children}

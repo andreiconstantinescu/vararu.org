@@ -1,5 +1,5 @@
 // @flow
-import {Component} from 'react'
+import React, {Component} from 'react'
 import throttle from 'raf-throttle'
 import {Motion, spring} from 'react-motion'
 import SvgLogo from './svg-logo'
@@ -103,11 +103,11 @@ export default class Logo extends Component {
           }
         ) => (
           <div
-            className="wrapper"
+            className='wrapper'
             ref={(wrapper: HTMLElement) => {
               this.$wrapper = wrapper
             }}
-            role="presentation"
+            role='presentation'
             style={{
               transform: `rotate3d(${style.tiltx}, ${style.tilty}, 0, ${style.degree}deg)`
             }}
@@ -130,7 +130,7 @@ export default class Logo extends Component {
               }
             `}</style>
             <div
-              className="background"
+              className='background'
               style={{
                 transform: `scale(${style.backgroundTransformScale})`
               }}
@@ -138,7 +138,7 @@ export default class Logo extends Component {
               <SvgLogo />
             </div>
             <div
-              className="foreground"
+              className='foreground'
               style={{
                 transform: `translateZ(${style.foregroundTranslateZ}px)`
               }}
