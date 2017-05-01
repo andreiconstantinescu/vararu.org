@@ -23,15 +23,19 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://vararu.org" />
           <title>theodor vararu. 👓</title>
-          <style
-            jsx
-            global // eslint-disable-next-line max-len
-          >{`body {color: #111;font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;margin: 0;}`}</style>
         </Head>
         <body>
           <Main />
           <NextScript />
         </body>
+        <style jsx>{`
+          body {
+            color: #111;
+            font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue',
+              helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+            margin: 0;
+          }
+        `}</style>
       </html>
     )
   }
