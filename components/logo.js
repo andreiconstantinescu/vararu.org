@@ -93,8 +93,7 @@ export default class Logo extends Component {
           tilty: spring(tilty, springParams),
           foregroundTranslateZ: spring(10)
         }}
-      >
-        {(
+        children={(
           style: {
             tiltx: number,
             tilty: number,
@@ -148,7 +147,7 @@ export default class Logo extends Component {
             </div>
           </div>
         )}
-      </Motion>
+      />
     )
   }
 }
