@@ -49,10 +49,6 @@ export default class MyDocument extends Document {
     return (
       <html lang='en'>
         <CustomHead />
-        <body>
-          <Main />
-          <NextScript />
-        </body>
         <style jsx>{`
           body {
             color: #111;
@@ -61,6 +57,10 @@ export default class MyDocument extends Document {
             margin: 0;
           }
         `}</style>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
       </html>
     )
   }
