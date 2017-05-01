@@ -9,9 +9,8 @@ before_install:
 script:
 - yarn check --integrity
 - yarn test
-after_success:
-- eval "$(ssh-agent -s)"
-- chmod 600 .travis/deploy_key.pem
-- ssh-add .travis/deploy_key.pem
-- git remote add deploy $DEPLOY_URL
-- git push deploy --quiet
+deploy:
+  provider: script
+  script: ./deploy.sh
+  on:
+    branch: master
