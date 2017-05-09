@@ -1,7 +1,9 @@
 // @flow
-import redirect from 'next-redirect'
+import React from 'react'
+import Layout from '../../components/layout'
 
-const Index = () => null
-Index.getInitialProps = async (ctx: Object) => redirect(ctx, 'https://tvararu.github.io/cv/')
-
-export default Index
+export default () => (
+  <Layout>
+    Hello
+  </Layout>
+)
