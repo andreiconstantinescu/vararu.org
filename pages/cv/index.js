@@ -54,7 +54,7 @@ const GDS = () => (
         initial implementation, build an <AccessibleAutocomplete /> and a <SuggestionEngine />. Take the component
         to user research, with abled users and with users with access needs, and an accessibility audit from
         the <DAC />. <B>Preact.js</B>, <B>TDD</B>, <B>Selenium testing</B>, <B>accessibility testing</B>
-        , <B>progressive enhancement</B>.
+        , <B>progressive enhancement</B>, <B>webpack</B>.
       </li>
       <li>
         Lead development of the <WebchatAlpha /> project, building user research prototypes and testing with users.
@@ -84,7 +84,7 @@ const Timecounts = () => (
       </li>
       <li>
         Build product features, collaborating with the stakeholders to define specifications. <B>Node.js</B>
-        , <B>React.js</B>, <B>TDD</B>, <B>Ruby on Rails</B>
+        , <B>React.js</B>, <B>TDD</B>, <B>Ruby on Rails JSON API</B>, <B>SASS</B> / <B>CSS modules</B>.
       </li>
       <li>
         Major features shipped include a calendar view and date picker component, CSV import validation, landing and
@@ -106,11 +106,12 @@ const Workangel = () => (
         Workangel builds an employee benefits, engagement and retention platform.
       </li>
       <li>
-        Build product features on the admin panel and user facing application, two <B>Angular.js 1</B> single page
-        applications.
+        Build product features on the admin panel and user facing application, two single page
+        applications that interact with a <B>RESTful JSON API</B>. <B>Node.js</B>, <B>Angular.js 1.x</B>
+        , <B>Stylus</B>.
       </li>
       <li>
-        Ship a <B>responsive web design</B> rebuild and <B>animations</B> for inter-page transitions and more,
+        Ship a <B>mobile-first design</B> rebuild and <B>animations</B> for inter-page transitions and more,
         both not scoped or factored into estimations but delivered to extremely favourable reception.
       </li>
       <li>
@@ -120,6 +121,53 @@ const Workangel = () => (
       </li>
       <li>
         Defined Jade, Stylus, and JavaScript styleguides. Provided mentoring and coaching to new developers.
+      </li>
+    </ul>
+  </section>
+)
+
+const LFA = () => <a href='https://github.com/learnfwd/lfa' target='_blank'>digital textbook authoring tool</a>
+const DeltaApp = () => (
+  <a href='https://github.com/readfwd/delta-app' target='_blank'>tour guide app for the Danube Delta</a>
+)
+const GeorgeEnescuFestival = () => (
+  <a href='http://festivalenescu.ro/en/' target='_blank'>George Enescu festival website</a>
+)
+const MonicaMacovei = () => (
+  <a href='https://github.com/readfwd/macovei' target='_blank'>Monica Macovei's 2014 presidential campaign</a>
+)
+
+const ReadForward = () => (
+  <section>
+    <h3>ReadForward, Lead Full Stack Developer, March 2013 - September 2014</h3>
+    <ul>
+      <li>
+        ReadForward is a digital agency with a focus towards education, culture, and political issues.
+      </li>
+      <li>
+        Lead development of an open source <LFA />. Build the pipeline and the frontend pattern library.
+        Onboard and train junior developers in its use that produced our digital textbook offerings for primary
+        education, which became the company's bread and butter product. <B>Node.js</B>, <B>Backbone.js</B>
+        , <B>pattern libraries</B>, <B>visual regression testing</B>.
+      </li>
+      <li>
+        Architected and managed a <DeltaApp />. Delivered 1.0 in just <B>3 weeks</B> of development
+        time. <B>Ampersand.js</B>, <B>Famous.js</B> native-like animations, <B>Cordova</B>, <B>testing</B>
+        , <B>mapping and route generation</B>, <B>offline-first</B>.
+      </li>
+      <li>
+        Architected and lead initial development of the open source website for <MonicaMacovei />. Score 100/100 on
+        Google PageSpeed Insights using <B>performance optimisations</B> like <B>critical path CSS generation</B>
+        , <B>single page application prerendering</B>, which favourably contributed to <B>SEO</B>. <B>Gulp.js</B>
+        , <B>Ampersand.js</B>.
+      </li>
+      <li>
+        Lead development of a holistic rewrite of the <GeorgeEnescuFestival />. Write scraping / data remodelling
+        scripts to import old pages from the legacy PHP backend, add new capabilities like <B>full text search</B> and
+        relationships between models. Build a <B>RESTful JSON API</B> for the newly developed native mobile
+        apps. Website was deployed at scale with hundreds of thousands of hits per month. <B>Ruby on Rails</B>
+        , <B>database and API design</B>, <B>load testing</B>, <B>New Relic monitoring</B>
+        , <B>caching and database query performance optimisations</B>.
       </li>
     </ul>
   </section>
@@ -135,6 +183,7 @@ export default () => (
         <GDS />
         <Timecounts />
         <Workangel />
+        <ReadForward />
       </section>
 
       <section>
