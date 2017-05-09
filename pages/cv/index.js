@@ -137,7 +137,7 @@ const GDS = () => (
       <Li>
         Lead development of a <CountryPicker />. Talk to service teams to learn about their needs, prototype
         initial implementation, build an <AccessibleAutocomplete /> and a <SuggestionEngine />. Take the component
-        to user research, with abled users and with users with access needs, and an accessibility audit from
+        to user research, with abled users and with users with access needs, and to an accessibility audit from
         the <DAC />. <B>Preact.js</B>, <B>TDD</B>, <B>Selenium testing</B>, <B>accessibility testing</B>
         , <B>progressive enhancement</B>, <B>webpack</B>.
       </Li>
