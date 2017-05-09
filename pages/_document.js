@@ -56,6 +56,12 @@ export default class MyDocument extends Document {
               helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
             margin: 0;
           }
+
+          @media print {
+            body {
+              font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+            }
+          }
         `}</style>
         <body>
           <Main />
