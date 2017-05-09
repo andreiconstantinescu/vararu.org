@@ -75,6 +75,29 @@ const GDS = () => (
   </section>
 )
 
+const Timecounts = () => (
+  <section>
+    <h3>Timecounts, Senior Full Stack Developer, May 2015 - February 2016</h3>
+    <ul>
+      <li>
+        Timecounts builds a volunteer and community management tool for charities and non-profits.
+      </li>
+      <li>
+        Build product features, collaborating with the stakeholders to define specifications. <B>Node.js</B>
+        , <B>React.js</B>, <B>TDD</B>, <B>Ruby on Rails</B>
+      </li>
+      <li>
+        Major features shipped include a calendar view and date picker component, CSV import validation, landing and
+        marketing pages, <B>animations</B>, improvements to the build process, backend support fixes.
+      </li>
+      <li>
+        Help the team refine their <B>Agile</B> processes, implement code review and issue tracking methods.
+        Champion <B>functional programming</B> and linting.
+      </li>
+    </ul>
+  </section>
+)
+
 export default () => (
   <Layout>
     <article>
@@ -83,6 +106,7 @@ export default () => (
       <section>
         <h2>Experience</h2>
         <GDS />
+        <Timecounts />
       </section>
 
       <section>
