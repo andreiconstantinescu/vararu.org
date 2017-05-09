@@ -185,7 +185,7 @@ const Vararuorg = () => <a href='https://github.com/tvararu/vararu.org' target='
 const N7m = () => <a href='https://github.com/tvararu/n7m' target='_blank'>single-serving numeronym generator app</a>
 
 export default () => (
-  <Layout>
+  <Layout wide>
     <article>
       <h1>Theodor Vararu's Résumé</h1>
 

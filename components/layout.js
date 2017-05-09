@@ -1,13 +1,15 @@
 // @flow
 import React from 'react'
+import cs from 'classnames'
 import Header from './header'
 
 type props = {
-  children?: React$Element<*>
+  children?: React$Element<*>,
+  wide?: Boolean
 }
 
-export default ({children}: props) => (
-  <div className='container'>
+export default ({children, wide}: props) => (
+  <div className={cs('container', {wide, slim: !wide})}>
     <Header />
     <main>
       {children}
@@ -18,9 +20,16 @@ export default ({children}: props) => (
       }
 
       @media (min-width: 30rem) {
-        .container {
+        .slim {
           margin: 3rem auto;
           max-width: 30rem;
+        }
+      }
+
+      @media (min-width: 45rem) {
+        .wide {
+          margin: 3rem auto;
+          max-width: 45rem;
         }
       }
     `}</style>
