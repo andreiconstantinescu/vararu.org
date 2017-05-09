@@ -47,6 +47,12 @@ export default () => (
           width: 10rem;
         }
       }
+
+      @media print {
+        header {
+          display: none;
+        }
+      }
     `}</style>
   </header>
 )
