@@ -98,6 +98,33 @@ const Timecounts = () => (
   </section>
 )
 
+const Workangel = () => (
+  <section>
+    <h3>Workangel, Lead Front End Developer, September 2014 - April 2015</h3>
+    <ul>
+      <li>
+        Workangel builds an employee benefits, engagement and retention platform.
+      </li>
+      <li>
+        Build product features on the admin panel and user facing application, two <B>Angular.js 1</B> single page
+        applications.
+      </li>
+      <li>
+        Ship a <B>responsive web design</B> rebuild and <B>animations</B> for inter-page transitions and more,
+        both not scoped or factored into estimations but delivered to extremely favourable reception.
+      </li>
+      <li>
+        Dramatically improve the build process by <B>optimising the performance</B> of tasks and embracing modern best
+        practices: template minification, linting, unit and Selenium integration testing, continuous integration,
+        load testing.
+      </li>
+      <li>
+        Defined Jade, Stylus, and JavaScript styleguides. Provided mentoring and coaching to new developers.
+      </li>
+    </ul>
+  </section>
+)
+
 export default () => (
   <Layout>
     <article>
@@ -107,6 +134,7 @@ export default () => (
         <h2>Experience</h2>
         <GDS />
         <Timecounts />
+        <Workangel />
       </section>
 
       <section>
