@@ -7,7 +7,7 @@ Run in development mode:
 
 ```bash
 yarn
-yarn start
+yarn dev
 ```
 
 Run in production mode:
