@@ -44,7 +44,7 @@ const DAC = () => <a href='http://www.digitalaccessibilitycentre.org/' target='_
 
 const GDS = () => (
   <section>
-    <h3>Government Digital Service, Developer / Senior Developer, March 2016 - August 2017</h3>
+    <h3><B>Government Digital Service</B>, Developer / Senior Developer, March 2016 - August 2017</h3>
     <ul>
       <li>
         GDS builds <GOVUK />, <GaaP />, and other digital transformation services.
@@ -77,7 +77,7 @@ const GDS = () => (
 
 const Timecounts = () => (
   <section>
-    <h3>Timecounts, Senior Full Stack Developer, May 2015 - February 2016</h3>
+    <h3><B>Timecounts</B>, Senior Full Stack Developer, May 2015 - February 2016</h3>
     <ul>
       <li>
         Timecounts builds a volunteer and community management tool for charities and non-profits.
@@ -100,7 +100,7 @@ const Timecounts = () => (
 
 const Workangel = () => (
   <section>
-    <h3>Workangel, Lead Front End Developer, September 2014 - April 2015</h3>
+    <h3><B>Workangel</B>, Lead Front End Developer, September 2014 - April 2015</h3>
     <ul>
       <li>
         Workangel builds an employee benefits, engagement and retention platform.
@@ -139,7 +139,7 @@ const MonicaMacovei = () => (
 
 const ReadForward = () => (
   <section>
-    <h3>ReadForward, Lead Full Stack Developer, March 2013 - September 2014</h3>
+    <h3><B>ReadForward</B>, Lead Full Stack Developer, March 2013 - September 2014</h3>
     <ul>
       <li>
         ReadForward is a digital agency with a focus towards education, culture, and political issues.
@@ -201,8 +201,8 @@ export default () => (
       <section>
         <h2>Education</h2>
 
-        <h3>London South Bank University, Hons BEng Computer Systems and Networks, 2016</h3>
-        <h3>University of Bucharest, BSc Computer Science, transferred to LSBU, 2014</h3>
+        <p><B>London South Bank University</B>, Hons BEng Computer Systems and Networks, graduated, 2014 - 2016.</p>
+        <p><B>University of Bucharest</B>, BSc Computer Science, transferred to LSBU, 2012 - 2014.</p>
       </section>
 
       <section>
