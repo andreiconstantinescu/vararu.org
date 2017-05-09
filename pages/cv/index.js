@@ -173,6 +173,17 @@ const ReadForward = () => (
   </section>
 )
 
+const GitHub = () => <a href='https://github.com/tvararu' target='_blank'>GitHub profile</a>
+const TheLastQuestion = () => (
+  <a href='https://github.com/tvararu/the-last-question' target='_blank'>Isaac Asimov's The Last Question</a>
+)
+const Dotfiles = () => <a href='https://github.com/tvararu/dotfiles' target='_blank'>my dotfiles</a>
+const NEBUL4 = () => (
+  <a href='https://github.com/tvararu/NEBUL4' target='_blank'>3D online space flight simulation game</a>
+)
+const Vararuorg = () => <a href='https://github.com/tvararu/vararu.org' target='_blank'>personal website</a>
+const N7m = () => <a href='https://github.com/tvararu/n7m' target='_blank'>single-serving numeronym generator app</a>
+
 export default () => (
   <Layout>
     <article>
@@ -180,6 +191,7 @@ export default () => (
 
       <section>
         <h2>Experience</h2>
+
         <GDS />
         <Timecounts />
         <Workangel />
@@ -188,18 +200,47 @@ export default () => (
 
       <section>
         <h2>Education</h2>
+
+        <h3>London South Bank University, Hons BEng Computer Systems and Networks, 2016</h3>
+        <h3>University of Bucharest, BSc Computer Science, transferred to LSBU, 2014</h3>
       </section>
 
       <section>
         <h2>Projects</h2>
+
+        <p>Please peruse my <GitHub /> for nearly all of my side projects. Notable highlights:</p>
+        <ul>
+          <li>a reimagined presentation of <TheLastQuestion />;</li>
+          <li>the source code for my <B>Next.js</B> and <B>React.js</B> <Vararuorg />;</li>
+          <li>a <N7m /> built using <B>Serverless</B> and <B>AWS Lambda</B>;</li>
+          <li><Dotfiles /> and macOS configuration scripts;</li>
+          <li>a <B>Meteor.js</B> and <B>Three.js</B> <NEBUL4 />.</li>
+        </ul>
       </section>
 
       <section>
         <h2>Technologies</h2>
+
+        <p>
+          I build products with <B>JavaScript</B> and <B>Node.js</B>, using <B>functional programming</B>,
+          <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
+        </p>
+        <p>
+          I develop exclusively on macOS/UNIXlike operating systems, using <B>git</B> and modern tools.
+        </p>
+        <p>
+          I admin my own DigitalOcean server, but also deploy to <B>Heroku</B>, <B>AWS Lambda</B>, static websites,
+          and other solutions depending on the need.
+        </p>
       </section>
 
       <section>
         <h2>Hobbies</h2>
+
+        <p>
+          I spend a lot of time reading books, about half of the programming variety. I love mentoring and teaching
+          others to learn to code. I practice guitar if I ever remember to, and go to lots of concerts and gigs.
+        </p>
       </section>
     </article>
   </Layout>
