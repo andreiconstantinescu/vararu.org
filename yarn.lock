@@ -150,13 +150,6 @@ array.prototype.find@2.0.0:
     define-properties "^1.1.2"
     es-abstract "^1.5.0"
 
-array.prototype.find@^2.0.1:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/array.prototype.find/-/array.prototype.find-2.0.4.tgz#556a5c5362c08648323ddaeb9de9d14bc1864c90"
-  dependencies:
-    define-properties "^1.1.2"
-    es-abstract "^1.7.0"
-
 arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
@@ -703,9 +696,11 @@ babel-plugin-transform-react-jsx@^6.24.1:
     babel-plugin-syntax-jsx "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-react-remove-prop-types@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.1.tgz#50d6376d3973c6052087b274ca9bd21b8a07409a"
+babel-plugin-transform-react-remove-prop-types@0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-react-remove-prop-types/-/babel-plugin-transform-react-remove-prop-types-0.4.4.tgz#ef3f6fc166b0d1f53f828d1a9dda90106ac27cd8"
+  dependencies:
+    babel-traverse "^6.24.1"
 
 babel-plugin-transform-regenerator@^6.22.0:
   version "6.24.1"
@@ -1337,13 +1332,7 @@ debug@2.2.0:
   dependencies:
     ms "0.7.1"
 
-debug@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.1.tgz#79855090ba2c4e3115cc7d8769491d58f0491351"
-  dependencies:
-    ms "0.7.2"
-
-debug@^2.1.1, debug@^2.2.0:
+debug@2.6.4, debug@^2.1.1, debug@^2.2.0:
   version "2.6.4"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.4.tgz#7586a9b3c39741c0282ae33445c4e8ac74734fe0"
   dependencies:
@@ -1432,7 +1421,7 @@ dlv@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/dlv/-/dlv-1.1.0.tgz#fee1a7c43f63be75f3f679e85262da5f102764a7"
 
-doctrine@1.5.0, doctrine@^1.2.2:
+doctrine@1.5.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/doctrine/-/doctrine-1.5.0.tgz#379dce730f6166f76cefa4e6707a159b02c5a6fa"
   dependencies:
@@ -1546,7 +1535,7 @@ error-stack-parser@^2.0.0:
   dependencies:
     stackframe "^1.0.2"
 
-es-abstract@^1.4.3, es-abstract@^1.5.0, es-abstract@^1.6.1, es-abstract@^1.7.0:
+es-abstract@^1.4.3, es-abstract@^1.5.0, es-abstract@^1.6.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.7.0.tgz#dfade774e01bfcd97f96180298c449c8623fb94c"
   dependencies:
@@ -1696,15 +1685,13 @@ eslint-plugin-promise@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-3.5.0.tgz#78fbb6ffe047201627569e85a6c5373af2a68fca"
 
-eslint-plugin-react@^6.10.3:
-  version "6.10.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-6.10.3.tgz#c5435beb06774e12c7db2f6abaddcbf900cd3f78"
+eslint-plugin-react@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.0.0.tgz#084cfe772d229ec5ae7e525dfc6d299cc21ddd77"
   dependencies:
-    array.prototype.find "^2.0.1"
-    doctrine "^1.2.2"
+    doctrine "^2.0.0"
     has "^1.0.1"
     jsx-ast-utils "^1.3.4"
-    object.assign "^4.0.4"
 
 eslint-plugin-standard@^3.0.1:
   version "3.0.1"
@@ -3007,13 +2994,13 @@ ms@0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.1.tgz#9cd13c03adbff25b65effde7ce864ee952017098"
 
-ms@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.2.tgz#ae25cf2512b3885a1d95d7f037868d8431124765"
-
 ms@0.7.3:
   version "0.7.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-0.7.3.tgz#708155a5e44e33f5fd0fc53e81d0d40a91be1fff"
+
+ms@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/ms/-/ms-1.0.0.tgz#59adcd22edc543f7b5381862d31387b1f4bc9473"
 
 mute-stream@0.0.5:
   version "0.0.5"
@@ -3051,9 +3038,9 @@ next-redirect@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/next-redirect/-/next-redirect-1.0.1.tgz#eb84ba12f5e1d7ee37fed7088d56ea747b4cedf2"
 
-next@^2.1.1:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/next/-/next-2.2.0.tgz#ae300c9306f4821ba6d6c10f3abb39b21d735664"
+next@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/next/-/next-2.3.1.tgz#12090e4d37222b1fc80ef09389ce884ffdd7e927"
   dependencies:
     ansi-html "0.0.7"
     babel-core "6.24.0"
@@ -3065,7 +3052,7 @@ next@^2.1.1:
     babel-plugin-transform-es2015-modules-commonjs "6.24.1"
     babel-plugin-transform-object-rest-spread "6.22.0"
     babel-plugin-transform-react-jsx-source "6.22.0"
-    babel-plugin-transform-react-remove-prop-types "0.4.1"
+    babel-plugin-transform-react-remove-prop-types "0.4.4"
     babel-plugin-transform-runtime "6.22.0"
     babel-preset-env "1.3.3"
     babel-preset-react "6.24.1"
@@ -3090,11 +3077,11 @@ next@^2.1.1:
     mv "2.1.1"
     mz "2.6.0"
     path-match "1.2.4"
-    pkg-up "1.0.0"
+    pkg-up "2.0.0"
     prop-types "15.5.7"
     react-hot-loader "3.0.0-beta.6"
-    send "0.15.1"
-    source-map-support "0.4.14"
+    send "0.15.2"
+    source-map-support "0.4.15"
     strip-ansi "3.0.1"
     styled-jsx "0.5.7"
     touch "1.0.0"
@@ -3250,17 +3237,9 @@ object-assign@^4.0.1, object-assign@^4.1.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
-object-keys@^1.0.10, object-keys@^1.0.8:
+object-keys@^1.0.8:
   version "1.0.11"
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.11.tgz#c54601778ad560f1142ce0e01bcca8b56d13426d"
-
-object.assign@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/object.assign/-/object.assign-4.0.4.tgz#b1c9cc044ef1b9fe63606fc141abbb32e14730cc"
-  dependencies:
-    define-properties "^1.1.2"
-    function-bind "^1.1.0"
-    object-keys "^1.0.10"
 
 object.entries@1.0.4:
   version "1.0.4"
@@ -3475,7 +3454,13 @@ pkg-dir@^1.0.0:
   dependencies:
     find-up "^1.0.0"
 
-pkg-up@1.0.0, pkg-up@^1.0.0:
+pkg-up@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  dependencies:
+    find-up "^2.1.0"
+
+pkg-up@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-1.0.0.tgz#3e08fb461525c4421624a33b9f7e6d0af5b05a26"
   dependencies:
@@ -3965,13 +3950,13 @@ right-align@^0.1.1:
   dependencies:
     align-text "^0.1.1"
 
-rimraf@2, rimraf@^2.2.8, rimraf@^2.5.1, rimraf@^2.6.1:
+rimraf@2, rimraf@^2.5.1, rimraf@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.6.1.tgz#c2338ec643df7a1b7fe5c54fa86f57428a55f33d"
   dependencies:
     glob "^7.0.5"
 
-rimraf@~2.2.6:
+rimraf@^2.2.8, rimraf@~2.2.6:
   version "2.2.8"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.2.8.tgz#e439be2aaee327321952730f99a8929e4fc50582"
 
@@ -4009,11 +3994,11 @@ safe-buffer@^5.0.1:
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.3.0.tgz#9b2ce5d3de02d17c6012ad326aa6b4d0cf54f94f"
 
-send@0.15.1:
-  version "0.15.1"
-  resolved "https://registry.yarnpkg.com/send/-/send-0.15.1.tgz#8a02354c26e6f5cca700065f5f0cdeba90ec7b5f"
+send@0.15.2:
+  version "0.15.2"
+  resolved "https://registry.yarnpkg.com/send/-/send-0.15.2.tgz#f91fab4403bcf87e716f70ceb5db2f578bdc17d6"
   dependencies:
-    debug "2.6.1"
+    debug "2.6.4"
     depd "~1.1.0"
     destroy "~1.0.4"
     encodeurl "~1.0.1"
@@ -4022,7 +4007,7 @@ send@0.15.1:
     fresh "0.5.0"
     http-errors "~1.6.1"
     mime "1.3.4"
-    ms "0.7.2"
+    ms "1.0.0"
     on-finished "~2.3.0"
     range-parser "~1.2.0"
     statuses "~1.3.1"
@@ -4098,9 +4083,9 @@ source-list-map@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-1.1.1.tgz#1a33ac210ca144d1e561f906ebccab5669ff4cb4"
 
-source-map-support@0.4.14, source-map-support@^0.4.2:
-  version "0.4.14"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.14.tgz#9d4463772598b86271b4f523f6c1f4e02a7d6aef"
+source-map-support@0.4.15, source-map-support@^0.4.2:
+  version "0.4.15"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.4.15.tgz#03202df65c06d2bd8c7ec2362a193056fef8d3b1"
   dependencies:
     source-map "^0.5.6"
 
