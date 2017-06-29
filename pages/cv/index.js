@@ -142,7 +142,7 @@ const GDS = () => (
         , <B>progressive enhancement</B>, <B>webpack</B>.
       </Li>
       <Li>
-        Lead development of the <WebchatAlpha /> project, building user research prototypes and testing with users.
+        Sole developer on the <WebchatAlpha /> project, building user research prototypes and testing with users.
         Focus on <B>accessibility</B> of webchat interfaces. Attend user research sessions, conduct on-site
         interviews with departments using webchat. Released findings as presentations, <WebchatBlogPost />
         . <B>Node.js</B>, <B>React.js</B>, <B>Socket.io</B>, <B>accessibility testing</B>.
@@ -301,8 +301,8 @@ export default () => (
         <h2>Technologies</h2>
 
         <p>
-          I build products with <B>JavaScript</B> and <B>Node.js</B>, using <B>functional programming</B>,
-          <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
+          I build products with <B>JavaScript</B> and <B>Node.js</B>, using <B>functional programming</B>
+          , <B>linting</B>, <B>testing</B>, <B>CI / CD</B>.
         </p>
         <p>
           I develop exclusively on macOS/UNIXlike operating systems, using <B>git</B> and modern tools.
