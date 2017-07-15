@@ -103,6 +103,9 @@ const AccessibleAutocomplete = () => (
 const SuggestionEngine = () => (
   <a href='https://github.com/alphagov/openregister-picker-engine' target='_blank'>suggestion engine</a>
 )
+const GenerateCountryPickerData = () => (
+  <a href='https://github.com/openregister/generate-picker-data-file' target='_blank'>generate country picker data</a>
+)
 const DAC = () => <a href='http://www.digitalaccessibilitycentre.org/' target='_blank'>Digital Accessibility Centre</a>
 
 const Job = ({employer, period, title}: {employer: string, period: string, title: string}) => (
@@ -140,6 +143,10 @@ const GDS = () => (
         to user research, with abled users and with users with access needs, and to an accessibility audit from
         the <DAC />. <B>Preact.js</B>, <B>TDD</B>, <B>Selenium testing</B>, <B>accessibility testing</B>
         , <B>progressive enhancement</B>, <B>webpack</B>.
+      </Li>
+      <Li>
+        Build a small <B>JSON API</B> to <GenerateCountryPickerData /> based on OpenRegister data. <B>Java</B>
+        , <B>Serverless</B>, <B>AWS</B>, <B>TDD</B>, <B>JSON</B>.
       </Li>
       <Li>
         Sole developer on the <WebchatAlpha /> project, building user research prototypes and testing with users.
